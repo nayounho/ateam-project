@@ -1,18 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import App from "./App/App";
+import GlobalStyle from "./utills/GlobalStyles";
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle />
     <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-const boom = async () => {
-  const data = await fetch("http://localhost:5000/requests");
-  const ateam = await data.json();
-  console.log(ateam);
-};
-boom();
