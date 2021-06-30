@@ -5,7 +5,8 @@ const StyledSelect = styled(Select)`
   display: flex;
   flex-flow: row;
   margin-bottom: 32px;
-  /* width: 1200px; */
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   & > section {
     position: absolute;

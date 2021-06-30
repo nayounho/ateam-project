@@ -2,18 +2,26 @@ import styled from "styled-components";
 import Post from "./Post";
 
 const StyledPost = styled(Post)`
+  max-width: 1200px;
+  margin: 0 auto;
+  & > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
   & > ul > li:hover {
     border: 2px solid #2196f3;
   }
   & > ul > li {
     position: relative;
     padding: 24px 0 4px 16px;
-    float: left;
-    width: 366px;
+    width: 380px;
     height: 356px;
     list-style: none;
     border: 1px solid #e5e5e5;
-    margin-right: 16px;
+    /* margin-right: 16px; */
     margin-bottom: 16px;
     & > .status {
       position: absolute;
@@ -39,6 +47,7 @@ const StyledPost = styled(Post)`
     & > button {
       padding: 6px 12px;
       border-radius: 4px;
+      cursor: pointer;
     }
     & > .request {
       margin-right: 4px;
@@ -56,8 +65,10 @@ const StyledPost = styled(Post)`
       margin-bottom: 38px;
       & > p {
         margin: 8px 0;
+        position: relative;
         & > span {
-          margin-left: 32px;
+          position: absolute;
+          left: 6em;
           font-weight: 700;
         }
       }

@@ -2,7 +2,8 @@ import styled from "styled-components";
 import Welcomepage from "./Welcomepage";
 
 const StyledWelcomepage = styled(Welcomepage)`
-  margin-left: 155px;
+  margin: 0 auto;
+  max-width: 1200px;
   & > p {
     font-size: 16px;
   }

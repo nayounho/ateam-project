@@ -14,7 +14,7 @@ const Post = ({ className, listAll, setListAll, renderList, setRenderList }) => 
           return (
             <li id={list.id} key={list.id}>
               <Title level={3}>{list.title}</Title>
-              <Paragraph className="status">{list.status === "상담중" ? list.status : null}</Paragraph>
+              {list.status === "상담중" ? <Paragraph className="status">{list.status}</Paragraph> : null}
               <Paragraph className="client">{list.client}</Paragraph>
               <Paragraph className="due">
                 <span>{list.due}</span>까지 납기
@@ -24,7 +24,7 @@ const Post = ({ className, listAll, setListAll, renderList, setRenderList }) => 
                   도면개수<span>{list.count}</span>
                 </Paragraph>
                 <Paragraph>
-                  총 수량 <span>{list.amount}</span> 개
+                  총 수량 <span>{list.amount + "개"}</span>
                 </Paragraph>
                 <Paragraph>
                   가공방식 <span>{list.method}</span>
