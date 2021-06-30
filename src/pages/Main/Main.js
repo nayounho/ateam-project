@@ -1,13 +1,13 @@
-import StyledHeader from "../containers/Header/Header.styled";
+import StyledHeader from "../../containers/Header/Header.styled";
 import Welcomepage from "containers/Welcomepage/Welcomepage";
-import Posts from "containers/Posts/Posts";
+import ReadPosts from "pages/ReadPosts/ReadPosts";
 
 const Main = () => {
   return (
     <>
       <StyledHeader />
       <Welcomepage />
-      <Posts />
+      <ReadPosts />
     </>
   );
 };
