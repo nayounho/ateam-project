@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+### Ateamventures 코딩테스트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 구현 기능:
+  - 서버에서 데이터를 불러와 화면에 렌더링
+  - 각 포스트 hover 시 파란색 border box 생성
+  - 가공방식 및 재료 선택 시 해당 데이터를 포함한 포스트만 정렬
+  - 가공방식 선택 후 그 중에 재료를 선택해도 중복 선택이 가능하도록 구현
+  - 상담 중 이라는 데이터가 포함된 포스트만 따로 볼 수 있도록 구현
+  - 반응형 구현
 
-## Available Scripts
+- 구현하지 못 한 기능:
+  - 가공 방식 및 재료의 리스트들을 중복으로 선택 가능하도록 구현하지 못했습니다. 작업을 하면서 input box를 생성하고 각 리스트를 배열에 
+    넣어 중복으로 체크할 수 있돌고 구현할 수 있을 것 같다고 생각했습니다.
+  - 반응형 작업에서 메뉴바의 클릭 이벤트 생성 후 메뉴 렌더링을 구현하지 못 하였습니다.
+  - 구현하지 못 한 기능을 마무리하고 싶습니다. 
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 배운 점: 
+  - 리스트를 선택하여 정렬하는 기능을 처음 구현해 봤는데 각 조건에 따라 정렬이 되는 과정에서 조건별 렌더링에 대해 
+    많이 배울 수 있었습니다. 또한, 실제 서비스하는 UI의 디자인 파일을 보고 작업을 하게되어 디테일한 부분까지 
+    디자인대로 작업을 해보니 생각보다 시간이 오래 걸렸지만 좋은 경험이었다고 생각합니다. 구현하지 못한 기능을 하지 못하고 전달 드리게 되어
+    아쉬운 부분이 있습니다. 

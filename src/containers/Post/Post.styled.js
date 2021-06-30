@@ -16,12 +16,11 @@ const StyledPost = styled(Post)`
   }
   & > ul > li {
     position: relative;
-    padding: 24px 0 4px 16px;
+    padding: 24px 16px;
     width: 380px;
     height: 356px;
     list-style: none;
     border: 1px solid #e5e5e5;
-    /* margin-right: 16px; */
     margin-bottom: 16px;
     & > .status {
       position: absolute;
@@ -38,7 +37,8 @@ const StyledPost = styled(Post)`
       margin-bottom: 24px;
     }
     & > .due {
-      width: 334px;
+      margin: 0;
+      width: 100%;
       padding-bottom: 16px;
       margin-bottom: 32px;
       color: #939fa5;
@@ -82,6 +82,13 @@ const StyledPost = styled(Post)`
   & > ul > li > p {
     font-size: 14px;
     margin: 0;
+  }
+
+  @media (max-width: 360px) {
+    & > ul > li {
+      width: 320px;
+      margin: 10px auto;
+    }
   }
 `;
 
