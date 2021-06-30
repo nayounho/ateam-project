@@ -1,14 +1,14 @@
 import StyledHeader from "../../containers/Header/Header.styled";
-import Welcomepage from "containers/Welcomepage/Welcomepage";
-import ReadPosts from "pages/ReadPosts/ReadPosts";
+import StyledReadPosts from "pages/ReadPosts/ReadPosts.styled";
+import StyledWelcomepage from "containers/Welcomepage/Welcomepage.styled";
 
-const Main = () => {
+const Main = ({ className }) => {
   return (
-    <>
+    <div className={className}>
       <StyledHeader />
-      <Welcomepage />
-      <ReadPosts />
-    </>
+      <StyledWelcomepage />
+      <StyledReadPosts />
+    </div>
   );
 };
 

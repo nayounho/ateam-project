@@ -1,7 +1,7 @@
-import Main from "../pages/Main/Main";
+import StyledMain from "../pages/Main/Main.styled";
 
 function App() {
-  return <Main />;
+  return <StyledMain />;
 }
 
 export default App;

@@ -1,7 +1,7 @@
 import Paragraph from "components/Paragraph/Paragraph";
 import { useEffect, useState } from "react";
 
-const Select = ({ setRenderList, listAll }) => {
+const Select = ({ className, setRenderList, listAll }) => {
   const [process, setProcess] = useState(false);
   const [selectState, setSelectState] = useState({ method: "", material: "" });
 
@@ -30,7 +30,7 @@ const Select = ({ setRenderList, listAll }) => {
   }, [selectState, process]);
 
   return (
-    <>
+    <div className={className}>
       <select onChange={onChangeMethod} name="processing-method" id="processingmethod-select">
         <option value="">가공방식</option>
         <option value="밀링">밀링</option>
@@ -45,14 +45,16 @@ const Select = ({ setRenderList, listAll }) => {
         <option value="강철">강철</option>
         <option value="스테인리스강">스테인리스강</option>
       </select>
-      <Paragraph>상담 중인 요청만 보기</Paragraph>
-      <input
-        type="checkbox"
-        onChange={e => {
-          setProcess(e.target.checked);
-        }}
-      />
-    </>
+      <section className={className}>
+        <input
+          type="checkbox"
+          onChange={e => {
+            setProcess(e.target.checked);
+          }}
+        />
+        <Paragraph>상담 중인 요청만 보기</Paragraph>
+      </section>
+    </div>
   );
 };
 

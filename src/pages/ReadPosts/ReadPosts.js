@@ -1,8 +1,8 @@
-import Post from "containers/Post/Post";
+import StyledPost from "containers/Post/Post.styled";
 import { useState, useEffect } from "react";
-import Select from "../../containers/Select/Select";
+import StyledSelect from "containers/Select/Select.styled";
 
-const ReadPosts = () => {
+const ReadPosts = ({ className }) => {
   const [renderList, setRenderList] = useState([]);
   const [listAll, setListAll] = useState([]);
 
@@ -16,10 +16,10 @@ const ReadPosts = () => {
     requestList();
   }, []);
   return (
-    <>
-      <Select renderList={renderList} setRenderList={setRenderList} listAll={listAll} setListAll={setListAll} />
-      <Post renderList={renderList} setRenderList={setRenderList} listAll={listAll} setListAll={setListAll} />
-    </>
+    <div className={className}>
+      <StyledSelect renderList={renderList} setRenderList={setRenderList} listAll={listAll} setListAll={setListAll} />
+      <StyledPost renderList={renderList} setRenderList={setRenderList} listAll={listAll} setListAll={setListAll} />
+    </div>
   );
 };
 
