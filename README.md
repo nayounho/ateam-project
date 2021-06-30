@@ -1,5 +1,9 @@
 ### Ateamventures 코딩테스트
 
+- UI 확인
+  - npm run json
+  - npm run start
+
 - 구현 기능:
   - 서버에서 데이터를 불러와 화면에 렌더링
   - 각 포스트 hover 시 파란색 border box 생성
